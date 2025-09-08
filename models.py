@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import pickle
 def generateAI():
@@ -13,4 +13,5 @@ def generateAI():
     y_ai=ai.predict(X_test)
     accuracy=accuracy_score(y_test, y_ai)
     pickle.dump(ai, open('ai.pkl', 'wb'))
+
     print("Model is created")
