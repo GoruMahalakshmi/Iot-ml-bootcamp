@@ -15,6 +15,7 @@ def predict():#http://
     result=ai.predict(data)[0]#predict[0]['object']
     return result
 if __name__=='__main__':
-    app.run(host='0.0.0.0'port=4000)#run server
+    app.run(host='0.0.0.0',port=4000)#run server
+
 
 
